@@ -4,7 +4,11 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 //import Card from "@mui/material/Card";
-
+import Card from "@mui/material/Card";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import CheckIcon from "@mui/icons-material/Check";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
@@ -74,7 +78,162 @@ function Main() {
                             <span className="highlight">landing the perfect career faster</span>.
                         </MKTypography>
                     </Grid>
+
                 </Container>
+            </MKBox>
+            <MKBox
+                minHeight="75vh"
+                width="100%"
+                bgColor="dark"
+                variant = "gradient"
+                borderRadius="lg"
+                sx={{
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    display: "flex",
+                    placeItems: "center",
+                    justifyContent: "center",
+                }}
+            >
+                <Card className="Pcard">
+                {/* Title */}
+                <Typography variant="h6" fontWeight="bold">
+                    Premium
+                </Typography>
+                <Typography variant="body2" color="gray">
+                    Free access for 200 members
+                </Typography>
+
+                {/* Price */}
+                <Box mt={2} mb={2}>
+                    <Typography variant="h4" fontWeight="bold">
+                    $499 <Typography component="span" variant="body1">/ year</Typography>
+                    </Typography>
+                </Box>
+
+                {/* Button */}
+                <Button
+                    variant="contained"
+                    sx={{
+                    backgroundColor: "#000",
+                    borderRadius: "8px",
+                    textTransform: "none",
+                    fontWeight: "bold",
+                    "&:hover": { backgroundColor: "#222" },
+                    width: "100%",
+                    }}
+                >
+                    BUY NOW
+                </Button>
+
+                {/* Features */}
+                <Box mt={3}>
+                    {[
+                    "Complete documentation",
+                    "Working materials in Sketch",
+                    "20GB cloud storage",
+                    "100 team members",
+                    ].map((text, index) => (
+                    <Box key={index} display="flex" alignItems="center" mt={1}>
+                        <CheckIcon sx={{ color: "#00ff99", fontSize: 20, mr: 1 }} />
+                        <Typography variant="body2">{text}</Typography>
+                    </Box>
+                    ))}
+                </Box>
+                </Card>
+                <Card className="Pcard" onClick={() => window.location.href = "/pages/landing-pages/about-us"}>
+                {/* Title */}
+                <Typography variant="h6" fontWeight="bold">
+                    Premium
+                </Typography>
+                <Typography variant="body2" color="gray">
+                    Free access for 200 members
+                </Typography>
+
+                {/* Price */}
+                <Box mt={2} mb={2}>
+                    <Typography variant="h4" fontWeight="bold">
+                    $499 <Typography component="span" variant="body1">/ year</Typography>
+                    </Typography>
+                </Box>
+
+                {/* Button */}
+                <Button
+                    variant="contained"
+                    sx={{
+                    backgroundColor: "#000",
+                    borderRadius: "8px",
+                    textTransform: "none",
+                    fontWeight: "bold",
+                    "&:hover": { backgroundColor: "#222" },
+                    width: "100%",
+                    }}
+                >
+                    BUY NOW
+                </Button>
+
+                {/* Features */}
+                <Box mt={3}>
+                    {[
+                    "Complete documentation",
+                    "Working materials in Sketch",
+                    "20GB cloud storage",
+                    "100 team members",
+                    ].map((text, index) => (
+                    <Box key={index} display="flex" alignItems="center" mt={1}>
+                        <CheckIcon sx={{ color: "#00ff99", fontSize: 20, mr: 1 }} />
+                        <Typography variant="body2">{text}</Typography>
+                    </Box>
+                    ))}
+                </Box>
+                </Card>
+
+<Card className="Pcard" onClick={() => window.location.href = "/pages/landing-pages/about-us"}>
+                {/* Title */}
+                <Typography variant="h6" fontWeight="bold">
+                    Premium
+                </Typography>
+                <Typography variant="body2" color="gray">
+                    Free access for 200 members
+                </Typography>
+
+                {/* Price */}
+                <Box mt={2} mb={2}>
+                    <Typography variant="h4" fontWeight="bold">
+                    $499 <Typography component="span" variant="body1">/ year</Typography>
+                    </Typography>
+                </Box>
+
+                {/* Button */}
+                <Button
+                    variant="contained"
+                    sx={{
+                    backgroundColor: "#000",
+                    borderRadius: "8px",
+                    textTransform: "none",
+                    fontWeight: "bold",
+                    "&:hover": { backgroundColor: "#222" },
+                    width: "100%",
+                    }}
+                >
+                    BUY NOW
+                </Button>
+
+                {/* Features */}
+                <Box mt={3}>
+                    {[
+                    "Complete documentation",
+                    "Working materials in Sketch",
+                    "20GB cloud storage",
+                    "100 team members",
+                    ].map((text, index) => (
+                    <Box key={index} display="flex" alignItems="center" mt={1}>
+                        <CheckIcon sx={{ color: "#00ff99", fontSize: 20, mr: 1 }} />
+                        <Typography variant="body2">{text}</Typography>
+                    </Box>
+                    ))}
+                </Box>
+                </Card>
             </MKBox>
             <MKBox pt={6} px={1} mt={6}>
                 <DefaultFooter content={footerRoutes} />

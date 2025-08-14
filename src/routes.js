@@ -48,6 +48,7 @@ import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
+import Presentation from "layouts/pages/presentation";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -79,6 +80,11 @@ const routes = [
       {
         name: "landing pages",
         collapse: [
+          {
+            name: "Presentation",
+            route: "/pages/presentation",
+            component: <Presentation />,
+          },
           {
             name: "about us",
             route: "/pages/landing-pages/about-us",
