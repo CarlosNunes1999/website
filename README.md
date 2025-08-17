@@ -52,10 +52,10 @@ Contact Page – Get in touch with support
 Follow these steps to run the project locally:
 
 1. Clone the repository
-'''
+```
 git clone https://github.com/CarlosNunes1999/website.git
 cd website
-'''
+```
 2. Install dependencies
 
 Make sure you have Node.js (v18 or later recommended) and npm installed.
