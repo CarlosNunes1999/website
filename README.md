@@ -47,24 +47,29 @@ Application Dashboard – Manage job applications
 Pricing / Premium Plans – Optional subscription for recruiters or job seekers
 
 Contact Page – Get in touch with support
-
 🔧 Getting Started
-Installation
 
-Clone the repository:
+Follow these steps to run the project locally:
 
-git clone https://github.com/your-username/job-career-application.git
-cd job-career-application
+1. Clone the repository
+'''
+git clone https://github.com/CarlosNunes1999/website.git
+cd website
+'''
+2. Install dependencies
 
-
-Install dependencies:
+Make sure you have Node.js (v18 or later recommended) and npm installed.
 
 npm install
 
-
-Start the development server:
-
+3. Start the development server
 npm start
+
+
+This will launch the app at http://localhost:3000/ in your browser.
+
+4. Build for production (optional)
+npm run build
 
 📌 Roadmap
 
