@@ -57,20 +57,22 @@ git clone https://github.com/CarlosNunes1999/website.git
 cd website
 ```
 2. Install dependencies
-
+```
 Make sure you have Node.js (v18 or later recommended) and npm installed.
 
 npm install
-
+```
 3. Start the development server
+```
 npm start
 
 
 This will launch the app at http://localhost:3000/ in your browser.
-
+```
 4. Build for production (optional)
+```
 npm run build
-
+```
 📌 Roadmap
 
  Add recruiter dashboard for posting jobs
